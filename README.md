@@ -77,6 +77,7 @@ webpack -p --config=webpack.config.js #前提是你在有webpack.config.js这个
 ### 后话 ###
 
 现在对这个repo没有完全的了解,只是暂时改成了ES6+webpack的,下一阶段的目标是添加:
+> 
 1.  react-router;
 2.  API数据交换;
 3.  D3;
