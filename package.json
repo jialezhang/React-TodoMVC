@@ -1,0 +1,48 @@
+{
+  "name": "todomvc-flux",
+  "version": "0.0.3",
+  "description": "Example Flux architecture.",
+  "repository": "https://github.com/facebook/flux",
+  "main": "js/app.js",
+  "dependencies": {
+    "babel-runtime": "^5.5.8",
+    "flux": "^2.0.1",
+    "keymirror": "~0.1.0",
+    "object-assign": "^1.0.0",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^5.5.8",
+    "babel-loader": "^5.1.4",
+    "browserify": "^6.2.0",
+    "css-loader": "^0.14.5",
+    "envify": "^3.0.0",
+    "file-loader": "^0.8.4",
+    "jest-cli": "~0.1.17",
+    "node-jsx": "^0.13.3",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.2.0",
+    "react-hot-loader": "^1.2.7",
+    "reactify": "^0.15.2",
+    "sass-loader": "^1.0.2",
+    "uglify-js": "~2.4.15",
+    "watchify": "^2.1.1",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.production.js",
+    "test": "jest"
+  },
+  "author": "Bill Fisher",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  }
+}
