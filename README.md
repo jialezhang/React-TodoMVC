@@ -41,10 +41,10 @@ webpack -p --config=webpack.config.js #前提是你在有webpack.config.js这个
         include: path.join(__dirname, 'js')
 }
 ```
-**test**: 这一行表明的是该loader匹配哪些文件,比如这里就是匹配**js**或者**jsx**;
-**loaders**: 这一行有着不止一个loader,执行顺序是从右到左,也就是说,对与所有的**js**和**jsx**文件,先进行babel的处理,然后交给react-hot;
-**inlucde**: 这一行是表明在那个目录下工作,也可以换成**exclude**,也就是不包含哪个目录;
-================================================================================
+    1. **test**: 这一行表明的是该loader匹配哪些文件,比如这里就是匹配**js**或者**jsx**;
+    2. **loaders**: 这一行有着不止一个loader,执行顺序是从右到左,也就是说,对与所有的**js**和**jsx**文件,先进行babel的处理,然后交给react-hot;
+    3. **inlucde**: 这一行是表明在那个目录下工作,也可以换成**exclude**,也就是不包含哪个目录;
+
 
 ### ES6 ###
 包含极多语法糖的ES版本,具体学习可以参考[阮一峰](http://es6.ruanyifeng.com/);
@@ -74,7 +74,7 @@ webpack -p --config=webpack.config.js #前提是你在有webpack.config.js这个
 ### 后话 ###
 
 现在对这个repo没有完全的了解,只是暂时改成了ES6+webpack的,下一阶段的目标是添加:
-1. [] react-router;
-2. [] API数据交换;
-3. [] D3;
-4. .....
+1. -[] react-router;
+2. -[] API数据交换;
+3. -[] D3;
+4. -[] .....
