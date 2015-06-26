@@ -32,7 +32,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         // loader的执行顺序从右到左
-        loaders: ['react-hot', 'babel?optional[]=runtime&stage=0'],
+        loaders: ['react-hot', 'babel'],
         include: path.join(__dirname, 'js') },
       {
         test: /\.scss$/,

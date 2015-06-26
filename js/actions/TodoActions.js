@@ -7,10 +7,12 @@ var  TodoActions  = {
    * @param  {string} text
    */
   create(text) {
-    dispatch({
-      actionType: TodoConstants.TODO_CREATE,
-      text: text
-    });
+    dispatch(
+      {
+        actionType: TodoConstants.TODO_CREATE
+      },{
+        text: text
+      });
   },
 
   /**
@@ -19,10 +21,12 @@ var  TodoActions  = {
    */
   updateText(id, text) {
     dispatch({
-      actionType: TodoConstants.TODO_UPDATE_TEXT,
-      id: id,
-      text: text
-    });
+      actionType: TodoConstants.TODO_UPDATE_TEXT
+    },
+             {
+               id: id,
+               text: text
+             });
   },
 
   /**
@@ -36,7 +40,8 @@ var  TodoActions  = {
                      TodoConstants.TODO_COMPLETE;
 
     dispatch({
-      actionType: actionType,
+      actionType: actionType
+    },{
       id: id
     });
   },
@@ -47,7 +52,7 @@ var  TodoActions  = {
   toggleCompleteAll() {
     dispatch({
       actionType: TodoConstants.TODO_TOGGLE_COMPLETE_ALL
-    })
+    });
   },
 
   /**
@@ -55,9 +60,10 @@ var  TodoActions  = {
    */
   destroy(id) {
     dispatch({
-      actionType: TodoConstants.TODO_DESTROY,
+      actionType: TodoConstants.TODO_DESTROY
+    },{
       id: id
-    })
+    });
   },
 
   /**
@@ -66,8 +72,8 @@ var  TodoActions  = {
   destroyCompleted() {
     dispatch({
       actionType: TodoConstants.TODO_DESTROY_COMPLETED
-    })
+    });
   }
-}
+};
 
 export default TodoActions;

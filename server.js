@@ -1,5 +1,6 @@
 /* eslint-disable no-var, strict */
 'use strict';
+
 require('node-jsx').install();
 
 var webpack = require('webpack');

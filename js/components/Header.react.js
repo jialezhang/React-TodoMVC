@@ -27,6 +27,7 @@ export default class Header {
    * @param {string} text
    */
   _onSave(text) {
+    console.log('header input');
     if (text.trim()){
       TodoActions.create(text);
     }

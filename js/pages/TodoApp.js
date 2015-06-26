@@ -1,11 +1,11 @@
-import React , { Component }  from 'react'
-import Footer from './Footer.react';
-import Header from './Header.react';
-import MainSection from './MainSection.react';
+import React , { Component }  from 'react';
+import Footer from '../components/Footer.react';
+import Header from '../components/Header.react';
+import MainSection from '../components/MainSection.react';
 import TodoStore from '../stores/TodoStore.test';
 import { RouteHandler } from 'react-router';
 
-import  '../../todomvc-common/base.css'
+import  '../../todomvc-common/base.css';
 
 function getTodoState() {
 

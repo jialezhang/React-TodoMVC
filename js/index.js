@@ -1,6 +1,8 @@
 import React from 'react';
-import TodoApp from './components/TodoApp.react';
+import router from './router';
 
 const rootEl = document.getElementById('todoapp');
 
-React.render(<TodoApp />, rootEl);
+router.run((Handler, state) =>
+  React.render(<Handler {...state} />, rootEl)
+);

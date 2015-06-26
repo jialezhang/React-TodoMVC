@@ -1,11 +1,8 @@
-import React , { Component }  from 'react'
+import React , { Component }  from 'react';
 import Footer from './Footer.react';
 import Header from './Header.react';
 import MainSection from './MainSection.react';
 import TodoStore from '../stores/TodoStore.test';
-import { RouteHandler } from 'react-router';
-
-import  '../../todomvc-common/base.css'
 
 function getTodoState() {
 
@@ -35,14 +32,13 @@ export default class TodoApp extends Component {
 
   render() {
     return (
-      <div className="todoApp">
+      <div>
         <Header />
         <MainSection
           allTodos={this.state.allTodos}
           areAllComplete={this.state.areAllComplete}
         />
         <Footer allTodos={this.state.allTodos} />
-        <RouteHandler { ...this.props } />
       </div>
     );
   }
