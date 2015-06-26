@@ -74,11 +74,16 @@ webpack -p --config=webpack.config.js #前提是你在有webpack.config.js这个
   }
 ```
 
+### API数据交换和react-router ###
+跟着github上面的一个[例子](https://github.com/gaearon/flux-react-router-example)学习的;
+暂时实现了从github获取个人信息并且显示出来;
+
 ### 后话 ###
 
 现在对这个repo没有完全的了解,只是暂时改成了ES6+webpack的,下一阶段的目标是添加:
 > 
-1.  react-router;
-2.  API数据交换;
+1.  __react-router__; 2015年 06月 27日 星期六 02:06:07 CST
+
+2.  __API数据交换;__ 2015年 06月 27日 星期六 02:06:07 CST
 3.  D3;
 4.  .....
